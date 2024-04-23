@@ -33,7 +33,7 @@ func main() {
 		b := readFromSTDIN()
 		output = message(b, "")
 	case 1:
-		// just on arg, read from that filename
+		// just one arg, read from that file
 		// eg: go run main.go -l -w test.txt
 		filename := flag.Arg(0)
 		b, err := os.ReadFile(filename)
